@@ -39,7 +39,6 @@ const sampleItems = [
 ];
 
 function App() {
-  localStorage.removeItem('items'); // remove in prod
 
   let savedItems = localStorage.getItem('items');
   const initialItems = savedItems ? JSON.parse(savedItems) : sampleItems;
